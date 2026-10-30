@@ -12,7 +12,7 @@ cd C:\inetpub\wwwroot\sez-widgets
 git clone https://github.com/developershahzod/sez-dist-monitoring.git sez-platform
 ```
 
-Без git: на этой странице GitHub «Code» → «Download ZIP», распакуйте содержимое в `C:\inetpub\wwwroot\sez-widgets\sez-platform\`.
+Без git: на этой странице GitHub «Code» → «Download ZIP». В архиве всё лежит в папке `sez-dist-monitoring-main`: её содержимое положите в `C:\inetpub\wwwroot\sez-widgets\sez-platform\`, так чтобы `manifest.json` оказался прямо в `sez-platform`.
 
 Проверка в окне без входа: `https://sgm.uzspace.uz/sez-widgets/sez-platform/manifest.json` показывает JSON. Папке нужен анонимный доступ. `web.config` из репозитория ставит кэш на 5 минут и не даёт открыть папку `.git`.
 
