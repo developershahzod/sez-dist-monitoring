@@ -1,0 +1,23 @@
+{
+  "name": "sez-platform",
+  "label": "Платформа СЭЗ",
+  "type": "widget",
+  "version": "1.18.0",
+  "exbVersion": "1.18.0",
+  "author": "IT Park",
+  "description": "Opens the SEZ monitoring platform unchanged: a full-size frame without the Embed widget's sandbox, so downloads, dialogs and the clipboard work as on its own site.",
+  "copyright": "",
+  "license": "",
+  "properties": {
+    "hasSettingPage": true,
+    "coverLayoutBackground": true,
+    "supportAutoSize": false
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 1280,
+    "height": 800
+  }
+}
