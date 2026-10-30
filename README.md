@@ -4,6 +4,13 @@
 
 Корень репозитория — это папка виджета: `manifest.json`, `config.json`, `icon.svg`, `dist/`. Здесь только результат сборки (`npm run build:for-download`). Исходный код лежит в репозитории платформы, в папке `arcgis/`, и публикуется сюда скриптом `arcgis/publish-widget.sh`.
 
+## Адрес манифеста
+
+- GitHub Pages: [https://developershahzod.github.io/sez-dist-monitoring/manifest.json](https://developershahzod.github.io/sez-dist-monitoring/manifest.json) — работает сразу: HTTPS, без входа, CORS разрешён. Новая сборка появляется здесь через 1–2 минуты после push.
+- Свой IIS: `https://sgm.uzspace.uz/sez-widgets/sez-platform/manifest.json` — после установки, описанной ниже.
+
+Для регистрации в портале подходит любой из двух адресов. С GitHub Pages папка на IIS не нужна, но браузеры пользователей портала должны открывать `developershahzod.github.io`, а код виджета загружается со стороннего хостинга. Для закрытой сети и по требованиям безопасности надёжнее свой IIS.
+
 ## Установка на IIS (один раз)
 
 ```powershell
