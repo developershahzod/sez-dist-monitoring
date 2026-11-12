@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "status": "MOCK_REALISTIC_SCENARIO_NOT_FOR_CONSTRUCTION",
+  "project_id": "factory-c03",
+  "site_reference": "bim/factory-c03-site.json",
+  "location": {
+    "region_ru": "Сырдарьинская область",
+    "region_uz": "Sirdaryo viloyati",
+    "region_en": "Syrdarya Region",
+    "locality_ru": "Промышленный пояс Янгиер — Гулистан",
+    "locality_uz": "Yangiyer — Guliston sanoat mintaqasi",
+    "locality_en": "Yangiyer — Gulistan industrial belt",
+    "wgs84_lat": 40.26396568,
+    "wgs84_lon": 68.81079087,
+    "timezone": "Asia/Tashkent",
+    "utc_offset_hours": 5
+  },
+  "wind": {
+    "status": "REFERENCE_DERIVED_NOT_MEASURED_ON_SITE",
+    "annual_mean_speed_m_s": 4.5,
+    "recorded_max_gust_m_s": 18.56,
+    "recorded_max_gust_year": 1987,
+    "prevailing_direction_deg": null,
+    "prevailing_direction_status": "unknown_requires_station_wind_rose",
+    "reference_height_m": 10,
+    "roughness_class": 2,
+    "roughness_length_m": 0.1,
+    "power_law_exponent": 0.16,
+    "monthly_mean_speed_m_s": {
+      "01": 3.6, "02": 4.1, "03": 4.8, "04": 5.2, "05": 5.0, "06": 4.9,
+      "07": 4.7, "08": 4.4, "09": 4.2, "10": 4.0, "11": 3.8, "12": 3.5
+    },
+    "visual_model": {
+      "purpose": "Realistic ambient motion for the web viewer only",
+      "gust_period_s": 7.5,
+      "gust_amplitude_ratio": 0.35,
+      "turbulence_intensity": 0.18,
+      "affected_elements": ["vegetation", "flag", "dust_particles", "wind_sock"],
+      "not_a_structural_load": true
+    },
+    "engineering_note": "Structural wind load requires the code wind region, terrain category, gust factor and pressure coefficients. Not derived here."
+  },
+  "climate": {
+    "status": "REFERENCE_ONLY_NOT_DESIGN_VALUES",
+    "annual_mean_temperature_C": 16.6,
+    "july_mean_max_C": 36.6,
+    "january_mean_min_C": -2.9,
+    "absolute_max_C": 43.9,
+    "absolute_max_year": 2005,
+    "extreme_cold_event_C": -22,
+    "extreme_cold_event_period": "2024-02",
+    "monthly_mean_temperature_C": {
+      "01": 1.3, "02": 4.2, "03": 10.1, "04": 17.0, "05": 22.6, "06": 27.8,
+      "07": 29.4, "08": 27.2, "09": 21.5, "10": 14.4, "11": 8.2, "12": 3.1
+    },
+    "design_values_source_required": "Uzhydromet station data and the climate annex of the applicable ShNK"
+  },
+  "solar": {
+    "status": "COMPUTED_FROM_LATITUDE_FOR_VISUALISATION",
+    "latitude_deg": 40.26396568,
+    "longitude_deg": 68.81079087,
+    "summer_solstice_noon_altitude_deg": 73.2,
+    "winter_solstice_noon_altitude_deg": 26.3,
+    "equinox_noon_altitude_deg": 49.7,
+    "purpose": "Sun position for realistic daylight in the viewer",
+    "not_a_daylight_or_energy_calculation": true
+  },
+  "atmosphere": {
+    "status": "VISUAL_MODEL_ONLY",
+    "typical_visibility_km": 18,
+    "summer_haze_factor": 0.35,
+    "dust_season_months": ["05", "06", "07", "08"],
+    "turbidity_summer": 4.2,
+    "turbidity_winter": 2.6
+  },
+  "limitations": [
+    "Wind direction rose is unknown; the viewer uses a configurable direction and marks it as unverified",
+    "Climate values are reference figures from public summaries and disagree between sources",
+    "No structural wind load, snow load or thermal design value is derived",
+    "Solar angles serve lighting only and are not a daylight, shading or energy study"
+  ],
+  "construction_use_allowed": false
+}

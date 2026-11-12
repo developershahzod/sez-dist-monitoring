@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "status": "MOCK_SITE_PLACEMENT_NOT_AN_ALLOCATED_LAND_PARCEL",
+  "project_id": "factory-c03",
+  "building_id": "BLDG-01",
+  "units": "m",
+  "source_bim_sha256": "81f0b3fa7935fa38a72f769beadbab064dd6635b75b938913e19fb8a45ff9925",
+  "region": {
+    "country": "UZ",
+    "country_name_ru": "Узбекистан",
+    "region_name_ru": "Сырдарьинская область",
+    "region_name_uz": "Sirdaryo viloyati",
+    "locality_reference": "Промышленный пояс Янгиер — Гулистан",
+    "selection_basis": "Территория СЭЗ Сырдарьи; равнинный рельеф; концентрация промышленных предприятий",
+    "cadastral_parcel_number": null,
+    "land_allocation_confirmed": false
+  },
+  "coordinate_system": {
+    "projected_crs": "EPSG:10728",
+    "projected_crs_name": "UZGD2024 / UzREF24 zone 42",
+    "datum": "Uzbekistan Geodetic Datum 2024",
+    "ellipsoid": "GRS 1980",
+    "central_meridian_deg": 69.0,
+    "scale_factor": 1.0,
+    "false_easting_m": 500000.0,
+    "false_northing_m": 0.0,
+    "geographic_crs": "EPSG:4326",
+    "vertical_datum": "EGM2008",
+    "legacy_crs_not_used": "CS-42 (Krasovsky) — расхождение с WGS84 до 200 м",
+    "grid_convergence_deg": -0.12229,
+    "magnetic_declination_deg": null,
+    "magnetic_declination_source": "NOAA World Magnetic Model — получить на дату работ"
+  },
+  "origin": {
+    "description": "Пересечение осей 1-А на уровне чистого пола L00",
+    "model_xyz_m": [
+      0,
+      0,
+      0
+    ],
+    "easting_m": 483905.084,
+    "northing_m": 4458856.208,
+    "wgs84_lat": 40.26396568,
+    "wgs84_lon": 68.81079087,
+    "rotation_to_grid_north_deg": 12.0,
+    "rotation_to_true_north_deg": 12.1223,
+    "elevation_m_asl": null,
+    "elevation_status": "unknown_requires_topographic_survey"
+  },
+  "plot": {
+    "size_m": [
+      300,
+      176
+    ],
+    "area_m2": 52800,
+    "area_ha": 5.28,
+    "setbacks_m": {
+      "along_long_side": 60,
+      "along_short_side": 40
+    },
+    "building_coverage_percent": 32.73,
+    "corners": [
+      {
+        "local_xy_m": [
+          0,
+          0
+        ],
+        "easting_m": 483854.712,
+        "northing_m": 4458804.607,
+        "wgs84_lat": 40.2635,
+        "wgs84_lon": 68.8102,
+        "id": "P1"
+      },
+      {
+        "local_xy_m": [
+          300,
+          0
+        ],
+        "easting_m": 484148.156,
+        "northing_m": 4458866.981,
+        "wgs84_lat": 40.26406733,
+        "wgs84_lon": 68.8136481,
+        "id": "P2"
+      },
+      {
+        "local_xy_m": [
+          300,
+          176
+        ],
+        "easting_m": 484111.564,
+        "northing_m": 4459039.134,
+        "wgs84_lat": 40.265617,
+        "wgs84_lon": 68.81321367,
+        "id": "P3"
+      },
+      {
+        "local_xy_m": [
+          0,
+          176
+        ],
+        "easting_m": 483818.12,
+        "northing_m": 4458976.761,
+        "wgs84_lat": 40.26504967,
+        "wgs84_lon": 68.8097655,
+        "id": "P4"
+      }
+    ]
+  },
+  "building_footprint": {
+    "size_m": [
+      180,
+      96
+    ],
+    "area_m2": 17280,
+    "corners": [
+      {
+        "local_xy_m": [
+          60,
+          40
+        ],
+        "easting_m": 483905.084,
+        "northing_m": 4458856.208,
+        "wgs84_lat": 40.26396568,
+        "wgs84_lon": 68.81079087,
+        "id": "C1",
+        "grid_axes": "1-A"
+      },
+      {
+        "local_xy_m": [
+          240,
+          40
+        ],
+        "easting_m": 484081.151,
+        "northing_m": 4458893.632,
+        "wgs84_lat": 40.26430607,
+        "wgs84_lon": 68.81285974,
+        "id": "C2",
+        "grid_axes": "16-A"
+      },
+      {
+        "local_xy_m": [
+          240,
+          136
+        ],
+        "easting_m": 484061.191,
+        "northing_m": 4458987.534,
+        "wgs84_lat": 40.26515135,
+        "wgs84_lon": 68.81262276,
+        "id": "C3",
+        "grid_axes": "16-E"
+      },
+      {
+        "local_xy_m": [
+          60,
+          136
+        ],
+        "easting_m": 483885.125,
+        "northing_m": 4458950.11,
+        "wgs84_lat": 40.26481095,
+        "wgs84_lon": 68.81055387,
+        "id": "C4",
+        "grid_axes": "1-E"
+      }
+    ]
+  },
+  "geometric_verification": {
+    "building_side_deviation_max_mm": 0.58,
+    "plot_side_deviation_max_mm": 1.05,
+    "diagonal_difference_mm": 0.11,
+    "computed_footprint_area_m2": 17279.96,
+    "method": "Transverse Mercator forward/inverse, GRS80; closure check"
+  },
+  "climate_reference": {
+    "status": "REFERENCE_ONLY_NOT_DESIGN_VALUES",
+    "july_mean_max_C": 36.6,
+    "absolute_max_C": 43.9,
+    "january_mean_min_C": -2.9,
+    "extreme_cold_event_C": -22,
+    "annual_mean_C": 16.6,
+    "design_values_source_required": "Узгидромет; климатическое приложение ШНК"
+  },
+  "seismic": {
+    "code": "КМК 2.01.03-96",
+    "scale": "MSK-64",
+    "regional_range_points": "VII-VIII",
+    "site_intensity_points": null,
+    "microzonation_performed": false,
+    "status": "NOT_CONFIRMED_FOR_THIS_SITE"
+  },
+  "required_client_inputs": [
+    "Кадастровый номер и границы участка",
+    "Топографическая съёмка М 1:500",
+    "Инженерно-геологические изыскания",
+    "Сейсмическое микрорайонирование",
+    "ТУ на электроснабжение, воду, канализацию, газ, связь",
+    "Технология производства и перечень оборудования",
+    "Климатические расчётные параметры"
+  ],
+  "limitations": [
+    "Размещение является обоснованным MOCK, а не отведённым участком",
+    "Отметка над уровнем моря, склонение и балльность не подтверждены",
+    "Климатические значения справочные и не являются расчётными",
+    "Генплан, проезды и благоустройство не разработаны",
+    "Подключение к внешним сетям не согласовано"
+  ],
+  "construction_use_allowed": false
+}

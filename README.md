@@ -2,7 +2,16 @@
 
 Собранный виджет «Платформа СЭЗ» для ArcGIS Experience Builder 1.18 (ArcGIS Enterprise 12.0). Виджет открывает платформу мониторинга СЭЗ во фрейме на всю страницу приложения.
 
-Корень репозитория — это папка виджета: `manifest.json`, `config.json`, `icon.svg`, `dist/`. Здесь только результат сборки (`npm run build:for-download`). Исходный код лежит в репозитории платформы, в папке `arcgis/`, и публикуется сюда скриптом `arcgis/publish-widget.sh`.
+Корень репозитория — это папка виджета: `manifest.json`, `config.json`, `icon.svg`, `dist/`. Рядом, в папке `app/`, лежит сама платформа: собранный фронт, который виджет и открывает. Здесь только результаты сборки. Исходный код лежит в репозитории платформы: виджет в `arcgis/` публикуется скриптом `arcgis/publish-widget.sh`, платформа — скриптом `arcgis/publish-app.sh`.
+
+## Платформа в `app/`
+
+Статическая сборка фронта: сервер для неё не нужен, подходят GitHub Pages и IIS.
+
+- Адрес на GitHub Pages: [https://developershahzod.github.io/sez-dist-monitoring/app/](https://developershahzod.github.io/sez-dist-monitoring/app/). На своём IIS после установки ниже: `https://sgm.uzspace.uz/sez-widgets/sez-platform/app/`.
+- Данные приходят с API `https://api-invest.uzspace.uz`. API отвечает только с ключом доступа, ключ зашит в сборку. Без ключа API возвращает 401.
+- Разделы открываются через `#`, например `app/#/dashboard`, поэтому настройка перезаписи адресов на IIS не нужна.
+- `web.config` добавляет типы файлов, которых IIS по умолчанию не отдаёт: `.glb` (BIM-модели), `.geojson`, `.webmanifest`, `.woff2`.
 
 ## Адрес манифеста
 
@@ -40,4 +49,4 @@ git pull
 
 ## Адрес платформы
 
-По умолчанию `https://sez.sgm.uzspace.uz/` (файл `config.json`). В приложении адрес меняется в настройках виджета, поле «Адрес платформы».
+По умолчанию виджет открывает `https://developershahzod.github.io/sez-dist-monitoring/app/` (файл `config.json`). Если репозиторий развёрнут на своём IIS, в настройках виджета, поле «Адрес платформы», укажите `https://sgm.uzspace.uz/sez-widgets/sez-platform/app/`: тогда весь код идёт с вашего сервера.

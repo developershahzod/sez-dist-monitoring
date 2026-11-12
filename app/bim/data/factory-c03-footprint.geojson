@@ -1,0 +1,52 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": 9002,
+   "properties": {
+    "id": 9002,
+    "kind": "bim_building",
+    "name": "Производственный корпус — BIM",
+    "name_uz": "Ishlab chiqarish korpusi — BIM",
+    "name_en": "Production hall — BIM",
+    "sez_zone_id": 87,
+    "sez_zone_name": "Sirdaryo EIZ",
+    "sez_slot_id": 13698,
+    "organization": "ООО \"JINGU SANOAT PARKI\"",
+    "project": "Подготовка хлопкового волокна и производство пряжи",
+    "height_m": 12.8,
+    "area_m2": 17280,
+    "rotation_deg": 161.6066,
+    "status": "MOCK_NOT_FOR_CONSTRUCTION"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       68.80586824,
+       40.28818193
+      ],
+      [
+       68.80385677,
+       40.28869574
+      ],
+      [
+       68.80350004,
+       40.28787165
+      ],
+      [
+       68.80551151,
+       40.28735783
+      ],
+      [
+       68.80586824,
+       40.28818193
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

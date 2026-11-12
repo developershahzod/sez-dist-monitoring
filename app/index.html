@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Мониторинг свободных экономических зон Узбекистана: площадки, участки, резиденты, инфраструктура" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- Installable on a phone home screen: opens full screen like an app -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="theme-color" content="#eceef6" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="СЭЗ" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Мониторинг СЭЗ Узбекистана</title>
+    <script>
+      try {
+        var t = localStorage.getItem("sez-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-s_h4nnWF.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-CswGA3Ex.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CxOE0YLO.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
