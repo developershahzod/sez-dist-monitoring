@@ -1,1 +1,0 @@
-import{j as n,L as r}from"./vendor-CswGA3Ex.js";import{aM as e}from"./index-s_h4nnWF.js";function u({kind:t,id:s,...i}){const{to:o,state:a}=e()(t,s);return n.jsx(r,{to:o,state:a,...i})}export{u as D};
