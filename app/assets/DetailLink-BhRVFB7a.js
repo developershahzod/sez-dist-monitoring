@@ -1,0 +1,1 @@
+import{j as r,L as a}from"./vendor-prSOuLH6.js";import{bd as e}from"./index-B8PTP0e-.js";function u({kind:t,id:s,...i}){const{to:o,state:n}=e()(t,s);return r.jsx(a,{to:o,state:n,...i})}export{u as D};
